@@ -705,7 +705,7 @@ e foram obtidos de fontes públicas para demonstração de habilidades técnicas
         card.addEventListener('click', function() {
             const titulo = this.querySelector('h4')?.textContent || 'Título indisponível';
             const ano = this.querySelector('time')?.textContent || 'Ano indisponível';
-            alert(`🎬 ${titulo} | 📅 ${ano}`);
+            alert(`${titulo} | ${ano}`);
         });
     });
 
@@ -722,8 +722,8 @@ e foram obtidos de fontes públicas para demonstração de habilidades técnicas
             const ano = new Date().getFullYear();
             copyright.textContent = copyright.textContent + ` | © ${ano} MOVEHIVE`;
         }
-        console.log('%c🎬 MOVEHIVE - DOM carregado com sucesso!', 'color: #e50914; font-size: 16px; font-weight: bold;');
-        console.log('%c✅ Site interativo pronto para usar!', 'color: #00ff00; font-size: 14px;');
+        console.log('%c MOVEHIVE - DOM carregado com sucesso!', 'color: #e50914; font-size: 16px; font-weight: bold;');
+        console.log('%c Site interativo pronto para usar!', 'color: #00ff00; font-size: 14px;');
     });
 
     const links = document.querySelectorAll('.menu a');
@@ -763,7 +763,7 @@ e foram obtidos de fontes públicas para demonstração de habilidades técnicas
     localStorage.setItem('visitas', visitas);
 
     const contadorEl = document.createElement('p');
-    contadorEl.textContent = `📊 Visitas: ${visitas}`;
+    contadorEl.textContent = `Visitas: ${visitas}`;
     contadorEl.style.fontSize = '12px';
     contadorEl.style.color = '#888';
     contadorEl.style.marginTop = '10px';
